@@ -13,9 +13,15 @@ let cashRegister = function(){
    this.balance -= num;
    return balance;
   };
-  let getBalance
+  // let getBalance
 
    // square: function(num){
    //   this.total = Math.sqrt(num);
    // }
+};
+
+let valueOne = [];
+
+function pushNumber(num){
+  valueOne.push(num);
 };
