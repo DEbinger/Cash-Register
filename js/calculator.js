@@ -6,13 +6,13 @@ function calculator(x,y,z) {
       case 'subtract':
         total = x - y;
         return total;
-      
+
       case 'multiply':
         total = x * y;
         return total;
-      
-      case 'divide':   
+
+      case 'divide':
         total = x / y;
         return total;
   }
- } 
+ }
