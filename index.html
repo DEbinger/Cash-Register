@@ -2,35 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Cash Register</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div id="display">
-display placeholder
-</div>
-
-<button onclick="pushNumber(1)">1</button>
-<button onclick="pushNumber(2)">2</button>
-<button onclick="pushNumber(3)">3</button>
-<button onclick="pushNumber(4)">4</button>
-<button onclick="pushNumber(5)">5</button>
-<button onclick="pushNumber(6)">6</button>
-<button onclick="pushNumber(7)">7</button>
-<button onclick="pushNumber(8)">8</button>
-<button onclick="pushNumber(9)">9</button>
-<button onclick="pushNumber(0)">0</button>
-<button onclick="pushNumber(00)">00</button>
-<button onclick="pushNumber(.)">.</button>
-<button onclick="calculator()">&divide;</button>
-<button onclick="calculator()">x</button>
-<button onclick="calculator()">-</button>
-<button onclick="calculator()">+</button>
-<button onclick="calculator()">=</button>
-<button onclick="clear()">Clear</button>
-<button onclick="getBalance(balance)">Get Balance</button>
-<button onclick="despoit()">Deposit Cash</button>
-<button onclick="withdraw()">Withdraw Cash</button>
+  <div id="cash-register">
+    <div id="display">
+    display placeholder
+    </div>
+    <div id="numbers">
+      <div class="row">
+        <button class="number" onclick="pushNumber(1)">1</button>
+        <button class="number" onclick="pushNumber(2)">2</button>
+        <button class="number" onclick="pushNumber(3)">3</button>
+      </div>
+      <div class="row">
+        <button class="number" onclick="pushNumber(4)">4</button>
+        <button class="number" onclick="pushNumber(5)">5</button>
+        <button class="number" onclick="pushNumber(6)">6</button>
+      </div>
+      <div class="row">
+        <button class="number" onclick="pushNumber(7)">7</button>
+        <button class="number" onclick="pushNumber(8)">8</button>
+        <button class="number" onclick="pushNumber(9)">9</button>
+      </div>
+      <div class="row">
+        <button class="number" onclick="pushNumber(0)">0</button>
+        <button class="number" onclick="pushNumber(00)">00</button>
+        <button class="number" onclick="pushNumber(.)">.</button>
+      </div>
+    </div>
+    <div id="methods">
+      <button class="method" onclick="calculator()">&divide;</button>
+      <button class="method" onclick="calculator()">x</button>
+      <button class="method" onclick="calculator()">-</button>
+      <button class="method" onclick="calculator()">+</button>
+      <button class="method" onclick="calculator()">=</button>
+    </div>
+    <div id="register-functions">
+      <button class="register-functions" onclick="clear()">Clear</button>
+      <button class="register-functions" onclick="getBalance()">Get Balance</button>
+      <button class="register-functions" onclick="despoit()">Deposit Cash</button>
+      <button class="register-functions" onclick="withdraw()">Withdraw Cash</button>
+    </div>
+  </div>
 <!-- <button type= submit >1</button> -->
 <script src = "js/calculator.js"></script>
 <script src = "js/cash_register.js"></script>
