@@ -29,7 +29,7 @@ function pushNumber(num){
    display.innerHTML = valueOne.join('');
     return valueOne;
 }
-  
+
 let valueTwo = [];
 
 function pushNumber(num){

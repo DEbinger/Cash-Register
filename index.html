@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Cash Register</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div id="cash-register">
     <div id="display">
-    display placeholder
+      <span>0</span>
     </div>
     <div id="numbers">
       <div class="row">
@@ -32,18 +32,18 @@
         <button class="number" onclick="pushNumber(.)">.</button>
       </div>
     </div>
-    <div id="methods">
-      <button class="method" onclick="calculator()">&divide;</button>
-      <button class="method" onclick="calculator()">x</button>
-      <button class="method" onclick="calculator()">-</button>
-      <button class="method" onclick="calculator()">+</button>
-      <button class="method" onclick="calculator()">=</button>
+    <div id="operators">
+      <button class="operator" onclick="calculator()">&divide;</button>
+      <button class="operator" onclick="calculator()">x</button>
+      <button class="operator" onclick="calculator()">-</button>
+      <button class="operator" onclick="calculator()">+</button>
+      <button class="operator" onclick="calculator()">=</button>
     </div>
     <div id="register-functions">
-      <button class="register-functions" onclick="clear()">Clear</button>
-      <button class="register-functions" onclick="getBalance()">Get Balance</button>
-      <button class="register-functions" onclick="despoit()">Deposit Cash</button>
-      <button class="register-functions" onclick="withdraw()">Withdraw Cash</button>
+      <button class="register-function" onclick="clear()">Clear</button>
+      <button class="register-function" onclick="getBalance()">Get Balance</button>
+      <button class="register-function" onclick="despoit()">Deposit Cash</button>
+      <button class="register-function" onclick="withdraw()">Withdraw Cash</button>
     </div>
   </div>
 <!-- <button type= submit >1</button> -->
