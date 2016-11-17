@@ -1,23 +1,42 @@
-let cashRegister = function(){
-  let display = 0;
-  let balance = 0;
-  let clear = function() {
-    this.display = 0;
-  };
-  let deposit = function(num){
-   this.balance += num;
+let cashRegister = { 
+  displayValue: 0,
+  balance: 0,
+  clearValue: function() {
+    display.innerHTML = '';
+  },
+  getBalanceValue: function() {
+    display.innerHTML = this.balance;
+    valueOne = [];
+    console.log("show me the money!");
+    return this.getBalanceValue;
+    } 
+}; 
+
+  let clear = document.getElementById("clear");
+  clear.addEventListener('click', cashRegister.clearValue);
+
+  let deposit = document.getElementById("deposit");
+  deposit.addEventListener('click', cashRegister.balance);
+
+  let getBalance = document.getElementById("getBalance");
+  getBalance.addEventListener('click', cashRegister.getBalanceValue);
+  /*let deposit = document.getElementById("deposit");
+  deposit.addEventListener('click', this.display);
+  function(){this.balance += parseFloat(display.innerHTML);
+   display.innerHTML = "";
    return balance;
   };
 
-  let withdraw = function(num){
-   this.balance -= num;
+  let withdraw = function(){let display = document.getElementById('display');
+   this.balance -= parseFloat(display.innerHTML);
+   display.innerHTML = "";
    return balance;
   };
   let getBalance = function(){
     this.display = balance;
     return display;
   };
-};
+};*/
 
 let display = document.getElementById('display');
 

@@ -1,0 +1,67 @@
+body {
+  font-family: 'Arial Black', 'sans-serif';
+}
+#cash-register {
+  max-width: 685px;
+  background: #D8D8D8;
+  padding: 20px;
+  box-shadow: 0 0 12px 0 rgba(0,0,0,0.5);
+}
+#display {
+  width: relative;
+  background: #fff;
+  border-radius: 30px;
+  display: block;
+  padding: 15px;
+  margin: 0 auto;
+  text-align: right;
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.5);
+  /*content: " ";*/
+}
+#numbers {
+  display: inline-block;
+}
+button {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 20px;
+  height: 70px;
+  border-radius: 35px;
+  background: #fff;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+  border: none;
+}
+button.number, button.operator {
+  width: 70px;
+}
+button.number {
+  margin: 0 10px 0 0;
+}
+.row {
+  padding: 5px;
+}
+.row:first-child{
+  padding-top: 20px;
+}
+#operators {
+  /*float: right;*/
+  display: inline-block;
+  margin: 20px;
+}
+button.operator {
+  display: block;
+  margin: 10px;
+}
+#register-functions {
+  display: inline-block;
+}
+button.register-function {
+  background: #B8E986;
+  color: #fff;
+  display: block;
+  width: 270px;
+  text-transform: uppercase;
+  margin: 10px 0 ;
+}
+button.register-function:first-child{
+  background: #9B9B9B;
+}
